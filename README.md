@@ -12,10 +12,10 @@ This project was inspired by the work done on the MIT Mini-Cheetah actuators by 
 
 ## Project Folders
 
-The main motor driver firmware is the **freertos_motor_demo** project. This project inludes closed-loop position control of the servo and communications via RS-485. This project is untested due to the failure of accurate motor calibration.  
-The **freertos_encoder_demo** project was used to run encoders only on the exoskeleton for out capstone demo day Fall 2019.  
+The main motor driver firmware is the **freertos_motor_demo** project. This project inludes RTOS tasks for closed-loop position control of the servo and communications via RS-485. This project is untested due to the failure of accurate motor calibration.  
+The **freertos_encoder_demo** project was used to run encoders only on the exoskeleton for our capstone demo day Fall 2019. This project removes the RTOS tasks for motor control.
 The **flash_encoder_settings** and **flash_driver_settings** projects are simple scripts to write the proper settings to those peripherals on the Motor Driver board. They also have some testing capability.  
-The **motor_calibration** project is used to find the default positive rotation direction of the motor and its electrical offset. This project is untested and needs to be verified accurate.  
+The **motor_calibration** project is used to find the default positive rotation direction of the motor and its electrical offset. This is a script that only runs once and doesn't use FreeRTOS. This project is untested and needs to be verified accurate.  
 
 ## Dependencies
 
