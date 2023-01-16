@@ -5,7 +5,7 @@ This repo contains Code Composer Studio projects for a variety of different task
 
 The BLDC Servo controller is built around the [TI Tiva C Series TM4C123x MCU](https://www.ti.com/lit/ds/symlink/tm4c1231h6pm.pdf), which is an ARM Cortex-M4F based MCU. We selected this MCU due to its motor control features including the avaialable number of PWM timers and quadrature decoder. 
 A [TI DRV8323](https://www.ti.com/lit/ds/symlink/drv8323.pdf) is used as a gate driver IC. 
-An [AMS AS5047P](https://ams.com/en/as5047p) was used to measure motor rotor position for servo control and Field Oriented control of the motor phases.
+An [AMS AS5047P](https://ams.com/en/as5047p) was used to measure motor rotor position for servo control and Field Oriented control of the motor phases. The schematic can be found [here](Motor_Controller_REV_B_Schematic.pdf)
 The motor controller PCB was mounted to a **T-Motor U8 Lite** drone motor to create the servo.
 
 This project was inspired by the work done on the MIT Mini-Cheetah actuators by Ben Katz. [This project](https://dspace.mit.edu/bitstream/handle/1721.1/118671/1057343368-MIT.pdf) was used as a reference for both the development of the motor controller PCB and the firmware.
